@@ -35,5 +35,10 @@
                 <p>© 2022 — TTBB </p>
             </footer>
         </div>
+        {% if message %}
+        <script>
+            window.alert("{{ message }}");
+        </script>
+        {% endif %}
     </body>
 </html>
