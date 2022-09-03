@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head lang="en">
-        <link rel="stylesheet" href="/static/style.css" />
-        <title>TTBB — Satisfaction Form</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div id="main">
-            <header>
-                <div id="title">
-                    <h1>Satisfaction Form</h1>
-                </div>
-                <a href="#"><img src="/static/img/logo.png" alt="TTBB logo" /></a>
-            </header>
+{% include 'components/head.html' %}
             <main>
                 {% if session['logged_in'] %}
 
@@ -29,16 +15,10 @@
                         </form>
                     </div>
                 {% endif %}
+                {% if message %}
+                    <script>
+                        window.alert("{{ message }}");
+                    </script>
+                {% endif %}
             </main>
-
-            <footer>
-                <p>© 2022 — TTBB </p>
-            </footer>
-        </div>
-        {% if message %}
-        <script>
-            window.alert("{{ message }}");
-        </script>
-        {% endif %}
-    </body>
-</html>
+{% include 'components/footer.html' %}
