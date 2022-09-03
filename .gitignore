@@ -1,0 +1,8 @@
+# HOSTING MY WEBSITE ON DETA.SH
+.deta/
+# JETBRAINS' PYCHARM IDE
+.idea/
+# KEYS AND SECRETS
+.env
+# MAC OS
+.DS_Store

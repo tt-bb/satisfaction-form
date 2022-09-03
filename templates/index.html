@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <link rel="stylesheet" href="/static/style.css" />
+        <title>TTBB — Satisfaction Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <div id="title">
+                    <h1>Satisfaction Form</h1>
+                </div>
+                <a href="#"><img src="/static/img/logo.png" alt="TTBB logo" /></a>
+            </header>
+            <main>
+                <form action="/" method="POST">
+                    <!-- CUSTOMER NAME -->
+                    <label for="name">Customer name</label><br>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <!-- DEALER NAME -->
+                    <label for="dealer">Dealer</label><br />
+                    <select id="dealer" name="dealer" required>
+                      <option value="Tiffanie">Tiffanie</option>
+                      <option value="Jerome">Jérôme</option>
+                      <option value="Benjamin">Benjamin</option>
+                      <option value="Alain">Alain</option>
+                      <option value="Nathalie">Nathalie</option>
+                    </select> 
+
+                    <!-- RATING DEALER -->
+                    <p>Rate your dealer</p>
+                    <input type="radio" id="one" name="rating" value="1">
+                    <label for="one">1</label>
+                    <input type="radio" id="two" name="rating" value="2">
+                    <label for="two">2</label>
+                    <input type="radio" id="three" name="rating" value="3">
+                    <label for="three">3</label>
+                    <input type="radio" id="four" name="rating" value="4">
+                    <label for="four">4</label>
+                    <input type="radio" id="five" name="rating" value="5">
+                    <label for="five">5</label>
+                    <input type="radio" id="six" name="rating" value="6">
+                    <label for="six">6</label>
+                    <input type="radio" id="seven" name="rating" value="7">
+                    <label for="seven">7</label>
+                    <input type="radio" id="eight" name="rating" value="8">
+                    <label for="eight">8</label>
+                    <input type="radio" id="nine" name="rating" value="9">
+                    <label for="nine">9</label>
+                    <input type="radio" id="ten" name="rating" value="10" checked>
+                    <label for="ten">10</label>
+
+                    <br>
+                    <!-- COMMENTS -->
+                    <label for="comments">Comments about your experience</label><br>
+                    <textarea id="comments" name="comments" rows="10" cols="43"></textarea><br>
+
+                    <input type="submit" value="Submit">
+                    </form> 
+            </main>
+            <footer>
+                <p>© 2022 — TTBB </p>
+            </footer>
+        </div>
+    </body>
+</html>
