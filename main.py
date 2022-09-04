@@ -4,7 +4,7 @@ import os
 
 
 app = Flask(__name__, static_url_path='/static')
-app.config['DEBUG'] = True
+app.config['DEBUG'] = False
 # Use to authorize us using session
 app.secret_key = os.getenv('FLASK_KEY')
 
